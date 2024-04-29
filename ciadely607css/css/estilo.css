@@ -1,0 +1,199 @@
+body{
+	background:url("../imagenes/logo1.jpg");
+	font-family:"Lucida Console", "courier new", monospace;
+	font-size:40px;
+	}
+p{
+	text-align:justify;
+	font-size:20px;
+}
+hr{
+	border:3px solid #000000;
+	border-radius:5px;
+	width:90%;
+}
+tabla,tr,td{
+	border:1px solid #000000;
+	border-spacing:0px;
+	background-color:#ffffff;
+	text-align:center;
+	font-size:20px;
+}
+ul{
+	font-size:25px;
+	list-style-type:circle;
+	list-style-position:inside;
+}
+ol{
+	font-size:25px;
+	list-style-type:upper-roman;
+	list-style-position:inside;
+}
+@font-face{
+	font-family:mifuente;
+	src:url(../fonts/BRITANIC.TTF);
+}
+@font-face{
+	font-family:mifuente2;
+	src:url(../fonts/Kasper Lullaby.oft);
+}
+
+
+.pie{
+	font-family:mifuente;
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+}
+.encabezado{
+	font-size:30px;
+	text-align:center;
+	font-weight:bold;
+}
+.img-marquee{
+	height:400px;
+	width:600px;
+	border-radius:5%;
+}
+.img-prod{
+	height:300px;
+	width:200px;
+	border-radius:5%;
+}
+.img-icono{
+	width:100px;
+	height:100px;
+}
+*{
+	margin:0px;
+}
+div#top{
+	font-family:mifuente2;
+	padding:30px;
+	width:100%;
+	height:60px;
+	background-color:#7E97DE;
+	/*background-image:linear-gradiant(000000,#7E97DE);
+	background-image:url();
+	background-repeat:no-repeat;*/
+}
+div#pie{
+	width:100%;
+	height:100%;
+	background-color:#7E97DE;
+	/*background-image:linear-gradiant(#7E97DE,000000);
+	background-image:url();
+	background-repeat:no-repeat;*/
+}
+
+div#principal{
+	background:url("../imagenes/logo1.jpg");
+	/*background-image:linear-gradient(#ffffff,#000000,#ffffff);*/
+	width:100%;
+}
+div#des{
+	width:30%;
+	background-color:#eee;
+	font-size:25px;
+}
+.caja{
+	height:450px;
+	width:300px;
+	background:#eee;
+	border:1px solid #ffffff;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow: 0 0 15px black;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+.caja-textoa{
+	padding-top:5px;
+	font-size:15px;
+}
+.carrousel{
+    width: 600px;
+    margin:auto;
+    /*Hace que el padding y el border pasen a formar
+    parte del calculo de la caja y no de la suma */
+    box-sizing: border-box;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 400px;
+    /*Hace que el navegador oculte
+    todos los contenidos que salen del div*/
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.itemCarrousel{
+    /*La nueva Posicion del elemento en relacioncion de
+    un elemento con su posicion normal*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.itemCarrouselArrows{
+    /*Hace que un elemento se coloque
+    respecto a su contenedor posicionado
+    mas cercano*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    /*Ayuda a colocar las caja como si
+    fueran celdas de tablas*/
+    display: flex;
+    align-items: center;
+    /*Distribuye el espacion entre los
+    objetos y su alrededor*/
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.img-c{
+	height:50px;
+	width:50px;
+}
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 32px;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
